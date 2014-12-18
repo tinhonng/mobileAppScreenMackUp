@@ -1,0 +1,98 @@
+header{
+    margin: auto;
+    width:200px;
+    height:40px;
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+ul{
+    position: relative;
+    height:200px;
+    width:200px;
+    list-style-type: none;
+    margin:auto;
+    margin-top:40px;
+}
+
+#check-in{
+    position: absolute;
+    height:80px;
+    width:80px;
+    border-radius:50%;
+    border: 2px solid white;
+    top:70px;
+    left:80px;
+    background-color: #eaeaea;
+}
+
+#check-in:hover{
+    background-color: #f8f8f8;
+    cursor:pointer;
+}
+
+#me{
+    position: absolute;
+    height:120px;
+    width:120px;
+    border-radius: 100% 0 0 0;
+    border: 1px solid #feaa00;
+    background-color: #feaa00;
+    top:-12px;
+    left:-2px;
+}
+
+#me:hover{
+    opacity:0.8;
+    cursor:pointer;
+}
+
+
+#set-up{
+    position: absolute;
+    height:120px;
+    width:120px;
+    border-radius:0 100% 0 0;
+    border: 1px solid #de3525;
+    background-color: #de3525;
+    top:-12px;
+    left:122px;
+}
+
+#set-up:hover{
+    opacity:0.8;
+    cursor:pointer;
+}
+
+#monitor{
+    position: absolute;
+    height:120px;
+    width:120px;
+    border-radius: 0 0 0 100%;
+    border: 1px solid #0db057;
+    background-color: #0db057;
+    top:112px;
+    left:-2px;
+}
+
+#monitor:hover{
+    opacity: 0.8;
+    cursor:pointer;
+}
+#reports{
+    position: absolute;
+    height:120px;
+    width:120px;
+    border-radius:0 0 100% 0;
+    border: 1px solid #1154f8;
+    background-color: #1154f8;
+    top:112px;
+    left:122px;
+}
+
+#reports:hover{
+    opacity: 0.8;
+    cursor:pointer;
+}
+
