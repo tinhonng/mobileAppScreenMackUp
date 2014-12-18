@@ -32,6 +32,12 @@ ul{
     cursor:pointer;
 }
 
+#check-in-canvas{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+}
+
 #me{
     position: absolute;
     height:120px;
@@ -46,6 +52,12 @@ ul{
 #me:hover{
     opacity:0.8;
     cursor:pointer;
+}
+
+#me-canvas{
+    height:120px;
+    width:120px;
+    border-radius: 100% 0 0 0;
 }
 
 
@@ -64,6 +76,11 @@ ul{
     opacity:0.8;
     cursor:pointer;
 }
+#set-up-canvas{
+    height:120px;
+    width:120px;
+    border-radius:0 100% 0 0;
+}
 
 #monitor{
     position: absolute;
@@ -80,6 +97,13 @@ ul{
     opacity: 0.8;
     cursor:pointer;
 }
+
+#monitor-canvas{
+    height:120px;
+    width:120px;
+    border-radius: 0 0 0 100%;
+}
+
 #reports{
     position: absolute;
     height:120px;
@@ -94,5 +118,12 @@ ul{
 #reports:hover{
     opacity: 0.8;
     cursor:pointer;
+}
+
+
+#reports-canvas{
+    height:120px;
+    width:120px;
+    border-radius:0 0 100% 0;
 }
 
