@@ -43,9 +43,16 @@ ul{
 
 #check-in > a > i{
     position: absolute;
-    top:18px;
+    top:15px;
     left:20px;
 }
+
+#check-in > a > h6{
+    position: absolute;
+    top:38px;
+    left:20px;
+}
+
 
 #me{
     position: absolute;
@@ -73,8 +80,14 @@ ul{
 
 #me > a > i{
     position: absolute;
-    top:38px;
+    top:33px;
     left:50px;
+}
+
+#me > a > h6{
+    position: absolute;
+    top:55px;
+    left:60px;
 }
 
 
@@ -106,6 +119,12 @@ ul{
     left:20px;
 }
 
+#set-up > a > h6{
+    position: absolute;
+    top:55px;
+    left:30px;
+}
+
 #monitor{
     position: absolute;
     height:120px;
@@ -132,8 +151,14 @@ ul{
 
 #monitor > a > i{
     position: absolute;
-    top:18px;
-    left:30px;
+    top:20px;
+    left:45px;
+}
+
+#monitor > a > h6{
+    position: absolute;
+    top:52px;
+    left:50px;
 }
 
 #reports{
@@ -164,6 +189,12 @@ ul{
 #reports > a > i{
     position: absolute;
     top:28px;
+    left:30px;
+}
+
+#reports > a > h6{
+    position: absolute;
+    top:52px;
     left:30px;
 }
 
