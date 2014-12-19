@@ -1,7 +1,7 @@
 /**
  * Created by tinhonng on 12/18/14.
  */
-document.addEventListener('DOMContentLoaded', function(){
+/*document.addEventListener('DOMContentLoaded', function(){
     drawReportsIcon();
     drawMonitorIcon();
     drawMeIcon();
@@ -160,4 +160,4 @@ function drawSetUp(){
     setUpContext.arc(40, 80, 10, 0,  2* Math.PI, false);
     setUpContext.stroke();
     setUpContext.closePath();
-}
+}*/
