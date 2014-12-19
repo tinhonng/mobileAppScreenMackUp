@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function(){
     drawReportsIcon();
     drawMonitorIcon();
     drawMeIcon();
+    drawCheckInIcon();
+    drawSetUp();
 });
 
 function drawReportsIcon(){
@@ -63,9 +65,6 @@ function drawReportsIcon(){
     reportsContext.stroke();
     reportsContext.closePath();
     reportsContext.fill();
-
-
-
     //reportsContext.font = "0.5px Georgia";
     //reportsContext.fillText("Reports", 1, 1);
 
@@ -103,7 +102,6 @@ function drawMonitorIcon(){
 }
 
 function drawMeIcon(){
-
     var meCanvas = document.getElementById('me-canvas');
     var meContext = meCanvas.getContext('2d');
     meContext.scale(2,1);
@@ -123,6 +121,43 @@ function drawMeIcon(){
     meContext.stroke();
 
     meContext.closePath();
+}
 
+function drawCheckInIcon(){
+    var checkInCanvas = document.getElementById('check-in-canvas');
+    var checkInContext = checkInCanvas.getContext('2d');
+    checkInContext.lineWidth = '8';
+    checkInContext.scale(2,1);
+    checkInContext.beginPath();
+    checkInContext.arc(75, 75, 40, 0,  2* Math.PI, false);
+    checkInContext.stroke();
+    checkInContext.closePath();
 
+    checkInContext.beginPath();
+    checkInContext.moveTo(62,62);
+    checkInContext.bezierCurveTo(62, 62, 65, 65, 75, 85);
+    checkInContext.bezierCurveTo(75, 85, 78, 78, 110, 40);
+    checkInContext.stroke();
+    checkInContext.closePath();
+}
+
+function drawSetUp(){
+    var setUpCanvas = document.getElementById('set-up-canvas');
+    var setUpContext = setUpCanvas.getContext('2d');
+    setUpContext.lineWidth = '2';
+    setUpContext.scale(2,1);
+    setUpContext.beginPath();
+    setUpContext.arc(70, 60, 15, 0,  2* Math.PI, false);
+    setUpContext.stroke();
+    setUpContext.closePath();
+
+    setUpContext.beginPath();
+    setUpContext.arc(40, 40, 10, 0,  2* Math.PI, false);
+    setUpContext.stroke();
+    setUpContext.closePath();
+
+    setUpContext.beginPath();
+    setUpContext.arc(40, 80, 10, 0,  2* Math.PI, false);
+    setUpContext.stroke();
+    setUpContext.closePath();
 }
