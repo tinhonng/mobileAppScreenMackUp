@@ -1,3 +1,11 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style-type:none;
+}
 header{
     margin: auto;
     width:200px;
@@ -7,11 +15,10 @@ header{
     text-align: center;
 }
 
-ul{
+#homePage ul{
     position: relative;
     height:200px;
     width:200px;
-    list-style-type: none;
     margin:auto;
     margin-top:40px;
 }
@@ -151,8 +158,8 @@ ul{
 
 #monitor > a > i{
     position: absolute;
-    top:20px;
-    left:45px;
+    top:26px;
+    left:40px;
 }
 
 #monitor > a > h6{
@@ -197,4 +204,82 @@ ul{
     top:52px;
     left:30px;
 }
+
+#screen2{
+    background-color: white;
+}
+
+#screen2Header{
+    position: relative;
+    margin:0;
+    padding:0;
+    margin-top:10px;
+    width:100%;
+}
+
+
+#screen2Header ul{
+    padding:0;
+    margin:0;
+}
+
+.backHome{
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.backHome:hover{
+    cursor:pointer;
+}
+#screen2 #clearOption{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+#screen2 #clearOption:hover{
+    cursor:pointer;
+}
+
+#screen2 #tasksList{
+    border: 2px solid black;
+    margin: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #c3c3c3;
+}
+
+#innerTasksList{
+    height:140px;
+    overflow:auto;
+}
+
+#screen2 #tasksList ul{
+    padding:5px;
+    background-color: #FFF;
+    margin-bottom:5px;
+}
+#screen2 #tasksList ul:last-child{
+    margin-bottom: 0;
+}
+
+#screen2 .name{
+
+}
+#screen2 .company{
+    display:inline;
+    margin-right:20px;
+}
+#screen2 .department{
+    display:inline;
+}
+
+#screen2 #addMore{
+    text-align: right;
+}
+#screen2 #addMore i:hover{
+    cursor: pointer;
+    background-color: #b5b5b5;
+}
+
 
