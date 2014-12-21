@@ -227,12 +227,12 @@ header{
 
 }
 
-.backHome{
+#screen2 .backHome{
     display:inline;
     margin-right:65%;
 }
 
-.backHome:hover{
+#screen2 .backHome:hover{
     cursor:pointer;
 }
 #screen2 #clearOption{
@@ -357,5 +357,116 @@ header{
     bottom:-20px;
     left:60%
 }
+
+#screen3{
+    height:100%;
+}
+
+#screen3 header{
+    height:10%;
+    width:100%;
+    margin:0;
+    padding:10% 0 0 0;
+}
+
+#screen3 #backHome{
+    position: absolute;
+    left:5%;
+    top:3%;
+}
+
+#screen3 header > ul{
+    margin:0;
+    padding:0;
+}
+
+
+#profile{
+    height:60%;
+    width:100%;
+}
+
+#availability{
+    position:relative;
+    height:10%;
+    width:100%;
+    border: 1px solid gray;
+}
+#availability .fa-calendar{
+    top: calc(50% - 12px);
+    position:absolute;
+    left: 5%;
+}
+#availability h4{
+    top: calc(50% - 6.5px);
+    left:15%;
+    padding:0;
+    margin:0;
+    position:absolute;
+}
+#availability .fa-chevron-right{
+    top: calc(50% - 10px);
+    right:5%;
+    position:absolute;
+}
+
+#notification{
+    position: relative;
+    height:10%;
+    width:100%;
+    border:1px solid gray;
+}
+
+#notification p{
+    position: absolute;
+    padding:0;
+    width:70%;
+    margin:0;
+    font-size:10px;
+    top: calc(50% - 12px);
+    left: calc(16px + 10%);
+}
+
+#notification .fa-bell-o{
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 5%;
+}
+
+#notification .fa-toggle-off{
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 19px;
+
+}
+
+#screen3 #photoArea{
+    background-color: #c0c0c0;
+    width:90%;
+    height:50%;
+    margin:auto;
+    position: relative;
+}
+
+#screen3 #photoArea .fa-camera-retro{
+    position: absolute;
+    top:calc(50% - 24px);
+    left:calc(50% - 24px);
+}
+
+#screen3 #name{
+    margin:8% 15% 8% 15%;
+}
+
+
+#screen3 #email{
+    margin:8% 15% 8% 15%;
+}
+
+
+#screen3 #phoneNum{
+    margin:8% 15% 8% 15%;
+}
+
 
 
