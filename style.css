@@ -468,5 +468,90 @@ header{
     margin:8% 15% 8% 15%;
 }
 
+#screen4{
+    height:100%;
+}
+
+#screen4 #backHome{
+    position: absolute;
+    left:5%;
+    top:3%;
+}
+
+
+#screen4 header{
+    height:10%;
+    width:100%;
+    margin:0;
+    padding:10% 0 0 0;
+}
+
+#screen4 header > ul{
+    margin:0;
+    padding:0;
+}
+
+#options{
+    height:70%;
+}
+#screen4 #options ul{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+}
+
+#screen4 #companies{
+    position:relative;
+    border-bottom:1px solid black;
+    height:15%;
+    background-color: #d0d0d0;
+}
+#screen4 #locations{
+    position:relative;
+    border-bottom:1px solid black;
+    height:15%;
+    background-color: #d0d0d0;
+}
+#screen4 #departments{
+    position:relative;
+    border-bottom:1px solid black;
+    height:15%;
+    background-color: #d0d0d0;
+}
+#screen4 #employees{
+    position:relative;
+    border-bottom:1px solid black;
+    height:15%;
+    background-color: #d0d0d0;
+}
+#screen4 #tasks{
+    position:relative;
+    height:15%;
+    background-color: #d0d0d0;
+}
+
+#screen4 .icon{
+    position: absolute;
+    left:3%;
+    top:40%;
+}
+
+#screen4 .optionName{
+    position: absolute;
+    left: 10%;
+    top:40%;
+}
+#screen4 .num{
+    position: absolute;
+    right:10%;
+    top:40%;
+}
+#screen4 .arrow{
+    position: absolute;
+    right:3%;
+    top:40%;
+}
+
 
 
