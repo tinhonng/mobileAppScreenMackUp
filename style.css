@@ -552,6 +552,98 @@ header{
     right:3%;
     top:40%;
 }
+#screen5{
+    height: 100%;
+}
+#screen5 header{
+    width:100%;
+    height:20%;
+    background-color: #ff9d9e;
+    margin:0;
+}
+#screen5 header > ul{
+    margin:0;
+    padding:0;
+}
+
+#screen5 #backHome{
+    position: absolute;
+    left:5%;
+}
+
+#screen5 #searchArea{
+    position: absolute;
+    top:10%;
+    width: 100%;
+    height: 6%;
+}
+
+#screen5 #searchArea > input{
+    width: 90%;
+    height:100%;
+    padding:0;
+    margin:0;
+    font-size: 100%;
+}
+
+#screen5 #userListArea{
+    background-color: #e8e3da;
+    height: 80%;
+}
+
+#screen5 #userListArea > ul{
+    margin: 0;
+    padding:0;
+    width:100%;
+    height: 100%;
+}
+#screen5 #userListArea > ul > li{
+    position: relative;
+    height: 10%;
+}
+#screen5 #userListArea > ul > li > ul{
+    height: 100%;
+    font-size:80%;
+}
+#screen5 #userListArea > ul > li:nth-child(even){
+    background-color: #c8c8c8;
+}
+
+#screen5 #userListArea > ul > li > ul > li:nth-child(1){
+    text-decoration: underline;
+    position: absolute;
+    left:5%;
+}
+#screen5 #userListArea > ul > li > ul > li:nth-child(2){
+    position: absolute;
+    left:35%;
+}
+#screen5 #userListArea > ul > li > ul > li:nth-child(3){
+    position: absolute;
+    left:75%;
+}
+
+#screen5 #userListArea > ul > li > ul > li:nth-child(4){
+    position: absolute;
+    top:50%;
+    left:5%;
+}
+
+#screen5 #userListArea > ul > li > ul > li:nth-child(5){
+    position: absolute;
+    top:50%;
+    left:35%;
+}
+
+#screen5 #userListArea > ul > li > ul > li:nth-child(6){
+    position: absolute;
+    top:50%;
+    left:75%;
+}
+
+
+
+
 
 
 
