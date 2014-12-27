@@ -641,6 +641,144 @@ header{
     left:75%;
 }
 
+#screen7{
+    height:100%;
+}
+#screen7 header{
+    padding:0;
+    margin:0;
+    width:100%;
+    height: 40px;
+    background-color: #45efcf;
+    position: relative;
+    font-size:80%;
+}
+
+#screen7 header > ul{
+    margin:0;
+    padding:0;
+    color: #286569;
+    height:100%;
+    width:100%;
+}
+
+#screen7 #saveOption{
+    top:30%;
+    position: absolute;
+    right:5%;
+    font-size: 80%;
+}
+
+#screen7 #planAvailability {
+    color: #286569;
+    left: 50%;
+    padding:15px;
+    text-align: center;
+}
+
+#screen6{
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#screen6 header{
+    position:relative;
+    width:100%;
+    margin:0;
+    height:10%;
+    z-index: 1;
+    background-color: #f6f6f6;
+}
+
+#screen6 ul{
+    margin:0;
+    padding:0;
+}
+
+#screen6 #backHome{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+#screen6 #searchArea{
+    font-size: 20px;
+    top:20px;
+    position:relative;
+}
+
+#screen6 #companyInfo{
+    height:90%;
+    max-width:100%;
+    position: relative;
+}
+
+#screen6 #companyNameList{
+    position: absolute;
+    left:-250px;
+    top:-250px;
+}
+
+#screen6 #companyDetailList{
+    position: absolute;
+    right:-250px;
+    bottom:-250px;
+}
+
+#screen6 .circle{
+    border:100px solid white;
+    padding:0;
+    list-style-type: none;
+    position: relative;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background: -webkit-radial-gradient(white, white, #686868); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(white, white, #686868); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(white, white, #686868); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(white, white, #686868); /* Standard syntax */
+    transform-origin: 50% 50%;
+}
+
+#screen6 .circle:hover{
+    cursor:pointer;
+}
+#screen6 .circle li{
+    font-size: 25px;
+    position: absolute;
+}
+#screen6 .circle li:nth-child(1){
+    top:-80px;
+    left:35%;
+    transform:rotate(-90deg);
+}
+
+#screen6 .circle li:nth-child(2){
+    top:45%;
+    left:310px;
+    transform:rotate(0deg);
+}
+#screen6 .circle li:nth-child(3){
+    bottom:-80px;
+    left:35%;
+    transform:rotate(90deg);
+}
+#screen6 .circle li:nth-child(4){
+    top:45%;
+    right:310px;
+    transform:rotate(180deg);
+}
+
+
+
+
 
 
 
