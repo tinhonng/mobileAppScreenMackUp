@@ -14,6 +14,85 @@
             <li id="saveOption">Save</li>
         </ul>
     </header>
+    <section id="time">
+        <ul id="outerCircle">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <ul id="innerCircle">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+            </ul>
+            </div>
+        </ul>
+    </section>
+    <section id="month">
+        <ul id="day_of_week">
+            <li>S</li>
+            <li>M</li>
+            <li>T</li>
+            <li>W</li>
+            <li>T</li>
+            <li>F</li>
+            <li>S</li>
+            <br/>
+        </ul>
+        <ul id="date">
+        </ul>
+    </section>
+<script>
+    var numdays = 30;
+    var startDayOfWeek = 1; // 0 is sunday, 1 is monday....
+    document.addEventListener('DOMContentLoaded', function(){
+        drawClock('outerCircle');
+        drawClock('innerCircle');
+        drawCalendar(numdays, startDayOfWeek);
+        function drawClock(circle){
+            var childrenList = document.getElementById(circle).children;
+            var radius = document.getElementById(circle).clientWidth / 2;
+            for(var i = 0; i < childrenList.length && childrenList[i].tagName === 'LI'; i++){
+                childrenList[i].style.top = radius - radius * Math.sin((Math.PI / 3) * (1-0.5*i)) + "px";
+                childrenList[i].style.right = radius - radius * Math.cos((Math.PI / 3) * (1-0.5*i)) + "px";
+            }
+        }
+        function drawCalendar(numdays, startDayOfWeek){
+            var j = startDayOfWeek;
+            var dateUL = document.getElementById('date');
+            for(var i = -j + 1; i < numdays + 1; i++){
+                var newLi = document.createElement('li');
+                if(i < j){
+                    newLi.innerHTML = '<i class="fa fa-close"></i>';
+                    j--;
+                }else {
+                    newLi.innerHTML = i;
+                }
+                if (i > 0 && i % 7 === 0) {
+                    dateUL.appendChild(document.createElement('br'));
+                }
+                dateUL.appendChild(newLi);
+            }
+        }
+    });
 
+</script>
 </body>
 </html>

@@ -41,11 +41,15 @@ document.addEventListener('DOMContentLoaded', function(){
        }else if(event.target.getAttribute('id') === "circleBottom"){
            currentCircle = circleBottom;
        }
-        currentCircle.dragging = true;
+        if(currentCircle)
+            currentCircle.dragging = true;
     });
     document.addEventListener('mouseup', function(event){
-        currentCircle.dragging = false;
-    })
+        if(currentCircle) {
+            currentCircle.dragging = false;
+            currentCircle = null;
+        }
+    });
     document.addEventListener('mousemove', function(e){
         if(currentCircle && currentCircle.dragging){
             var cY = e.clientY;

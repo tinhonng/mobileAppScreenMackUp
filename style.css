@@ -641,40 +641,6 @@ header{
     left:75%;
 }
 
-#screen7{
-    height:100%;
-}
-#screen7 header{
-    padding:0;
-    margin:0;
-    width:100%;
-    height: 40px;
-    background-color: #45efcf;
-    position: relative;
-    font-size:80%;
-}
-
-#screen7 header > ul{
-    margin:0;
-    padding:0;
-    color: #286569;
-    height:100%;
-    width:100%;
-}
-
-#screen7 #saveOption{
-    top:30%;
-    position: absolute;
-    right:5%;
-    font-size: 80%;
-}
-
-#screen7 #planAvailability {
-    color: #286569;
-    left: 50%;
-    padding:15px;
-    text-align: center;
-}
 
 #screen6{
     height:100%;
@@ -706,6 +672,10 @@ header{
     position: absolute;
     top:10px;
     left:10px;
+}
+
+#screen6 #backHome:hover{
+    cursor:pointer;
 }
 
 #screen6 #searchArea{
@@ -740,10 +710,10 @@ header{
     width:300px;
     height:300px;
     border-radius:50%;
-    background: -webkit-radial-gradient(white, white, #686868); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(white, white, #686868); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(white, white, #686868); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(white, white, #686868); /* Standard syntax */
+    background: -webkit-radial-gradient(white, white, #acacac); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(white, white, #acacac); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(white, white, #acacac); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(white, white, #acacac); /* Standard syntax */
     transform-origin: 50% 50%;
 }
 
@@ -774,6 +744,90 @@ header{
     top:45%;
     right:310px;
     transform:rotate(180deg);
+}
+
+#screen7{
+    height:100%;
+}
+#screen7 header{
+    padding:0;
+    margin:0;
+    width:100%;
+    height: 40px;
+    position: relative;
+    font-size:80%;
+}
+
+#screen7 header > ul{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+
+#screen7 #saveOption{
+    top:30%;
+    position: absolute;
+    right:5%;
+    font-size: 80%;
+}
+
+#screen7 #planAvailability {
+    left: 50%;
+    padding:15px;
+    text-align: center;
+}
+
+#screen7 #time{
+    height:45%;
+    color: #a3a3a3;
+}
+
+#screen7 #time #outerCircle{
+    margin:auto;
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    position: relative;
+    padding:0;
+}
+
+#screen7 #time #outerCircle li{
+    position: absolute;
+    margin:0;
+    padding:0;
+}
+
+#screen7 #time #innerCircle{
+    margin:0;
+    padding:0;
+}
+
+
+#screen7 #time #innerCircle{
+    margin:auto;
+    height:150px;
+    width:150px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top:calc(125px - 75px);
+    left:calc(125px - 75px);
+}
+
+#screen7 #month{
+    height:45%;
+}
+
+#screen7 #day_of_week li{
+    width:30px;
+    float:left;
+}
+
+#screen7 #date li{
+    width:30px;
+    float:left;
+    height:16px;
 }
 
 
