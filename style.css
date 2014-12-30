@@ -829,47 +829,178 @@ header{
     float:left;
     height:16px;
 }
-#screen9{
+#screen8{
     height:100%;
 }
-#screen9 header{
+#screen8 header{
     height:10%;
     width:100%;
     margin:0;
 }
-#screen9 header ul{
-    padding:20px 10px 20px 10px;
+#screen8 header ul{
     background-color: black;
     color:gray;
+    margin:0;
 }
 
-#screen9 header ul li{
+#screen8 header ul li{
     display:inline;
 }
 
-#screen9 #backHome{
+#screen8 #backHome{
     float: left;
 }
 
-#screen9 #add{
+#screen8 #add{
     float: right;
 }
 
-#screen9 #topview{
+#screen8 #topview{
     height:40%;
     min-height: 100px;
     position: relative;
 }
 
-#screen9 input{
+#screen8 #wrapper{
+    position: relative;
     display:block;
-    position: absolute;
-    width:100%;
-    top:50%;
     height:15%;
     font-size: 20px;
     text-align: center;
 }
+
+#screen8 #wrapper input{
+    display:block;
+    font-size: 25px;
+    width:100%;
+    text-align: center;
+    margin:0;
+    padding:0;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+#screen8 #outerWrapper{
+    position: absolute;
+    top: 45%;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#screen8 #bottomview{
+    height:40%;
+    background-color: black;
+    min-height: 100px;
+}
+
+#screen8 #goArrow{
+   position: absolute;
+   top:0;
+   right:0;
+}
+
+#screen8 footer{
+    height:10%;
+}
+
+#screen8 footer ul{
+    padding:0;
+    height:100%;
+    width:100%;
+    margin:0;
+
+}
+
+#screen8 footer li{
+    font-size: 10px;
+    width:20%;
+    height:100%;
+    float:left;
+    background-color: #a0a0a0;
+    position: relative;
+    padding-top:10px;
+}
+#screen8 footer li{
+    text-align: center;
+}
+
+#screen8 footer li:hover{
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+
+
+/**/
+#screen9{
+    height:100%;
+}
+#screen9 header{
+    font-size: 15px;
+    height:10%;
+    min-height: 50px;
+    width:100%;
+    margin:0;
+}
+#screen9 header ul{
+    padding:5px 10px 5px 10px;
+    background-color: black;
+    color:gray;
+    height:100%;
+    margin:0;
+}
+
+#screen9 header ul li{
+    float:left;
+    width:33.3%;
+}
+
+
+#screen9 #backHome i {
+    padding: 15px 10px 15px 10px;
+}
+#screen9 #backHome i {
+    float: left;
+}
+
+#screen9 #add i {
+    padding: 15px 10px 15px 10px;
+}
+#screen9 #add i {
+    float:right;
+}
+
+
+#screen9 #topview{
+    height:40%;
+    min-height: 100px;
+    position: relative;
+    padding-top: 10px;
+}
+
+#screen9 #outerWrapper i{
+    position: absolute;
+    top:5px;
+    left:10px;
+}
+#screen9 #outerWrapper input{
+    display:block;
+    font-size: 25px;
+    width:100%;
+    text-align: center;
+    margin:0;
+    padding:0;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+#screen9 #outerWrapper{
+    position: relative;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
 
 #screen9 #bottomview{
     height:40%;
@@ -877,11 +1008,26 @@ header{
     min-height: 100px;
 }
 
-#screen9 #goArrow{
-    position: absolute;
-    top:50%;
-    right:5px;
+#screen9 #bottomview ul{
+    height:100%;
+    width:100%;
+    padding:0;
+    font-size: 20px;
 }
+
+#screen9 #bottomview ul li{
+    height:33.3%;
+    width:100%;
+    border-bottom: 1px solid white;
+    text-align: center;
+    display:table;
+}
+
+#screen9 #bottomview ul li div{
+    display: table-cell;
+    vertical-align: middle;
+}
+
 
 #screen9 footer{
     height:10%;
@@ -901,7 +1047,6 @@ header{
     height:100%;
     float:left;
     background-color: #a0a0a0;
-    border-left:1px solid black;
     position: relative;
     padding-top:10px;
 }
@@ -913,6 +1058,7 @@ header{
     background-color: #d9d9d9;
     cursor: pointer;
 }
+
 
 
 
