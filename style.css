@@ -975,31 +975,30 @@ header{
     height:40%;
     min-height: 100px;
     position: relative;
-    padding-top: 10px;
 }
 
-#screen9 #outerWrapper i{
-    position: absolute;
-    top:5px;
-    left:10px;
-}
-#screen9 #outerWrapper input{
-    display:block;
-    font-size: 25px;
-    width:100%;
-    text-align: center;
-    margin:0;
-    padding:0;
-    border-top:2px solid black;
-    border-bottom:2px solid black;
-}
-#screen9 #outerWrapper{
-    position: relative;
-    height:100%;
-    width:100%;
-    margin:0;
-    padding:0;
-}
+/*#screen9 #outerWrapper i{*/
+    /*position: absolute;*/
+    /*top:5px;*/
+    /*left:10px;*/
+/*}*/
+/*#screen9 #outerWrapper input{*/
+    /*display:block;*/
+    /*font-size: 25px;*/
+    /*width:100%;*/
+    /*text-align: center;*/
+    /*margin:0;*/
+    /*padding:0;*/
+    /*border-top:2px solid black;*/
+    /*border-bottom:2px solid black;*/
+/*}*/
+/*#screen9 #outerWrapper{*/
+    /*position: relative;*/
+    /*height:100%;*/
+    /*width:100%;*/
+    /*margin:0;*/
+    /*padding:0;*/
+/*}*/
 
 
 #screen9 #bottomview{
@@ -1058,6 +1057,42 @@ header{
     background-color: #d9d9d9;
     cursor: pointer;
 }
+
+#screen9 #outerWrapper{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+
+#screen9 #outerWrapper #map-outer{
+    height:100%;
+    width:100%;
+}
+
+#screen9 #outerWrapper #map-container{
+    height:100%;
+    width:100%;
+}
+
+#screen9 #outerWrapper input{
+    position: absolute;
+    width:100%;
+    top:20px;
+    z-index: 1;
+}
+
+#screen9 #outerWrapper .fa-search{
+    position: absolute;
+    top:20px;
+    z-index: 2;
+}
+
+
+
+
+
 
 
 
