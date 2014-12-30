@@ -857,7 +857,7 @@ header{
 
 #screen9 #topview{
     height:40%;
-    min-height: 250px;
+    min-height: 100px;
     position: relative;
 }
 
@@ -874,7 +874,7 @@ header{
 #screen9 #bottomview{
     height:40%;
     background-color: black;
-    min-height: 250px;
+    min-height: 100px;
 }
 
 #screen9 #goArrow{
@@ -896,13 +896,17 @@ header{
 }
 
 #screen9 footer li{
+    font-size: 10px;
     width:20%;
     height:100%;
     float:left;
     background-color: #a0a0a0;
     border-left:1px solid black;
     position: relative;
-    padding:10px;
+    padding-top:10px;
+}
+#screen9 footer li{
+    text-align: center;
 }
 
 #screen9 footer li:hover{
