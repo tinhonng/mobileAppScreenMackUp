@@ -1090,6 +1090,132 @@ header{
 }
 
 
+/**/
+#screen10{
+    height:100%;
+}
+#screen10 header{
+    font-size: 15px;
+    height:10%;
+    min-height: 50px;
+    width:100%;
+    margin:0;
+}
+#screen10 header ul{
+    padding:5px 10px 5px 10px;
+    background-color: black;
+    color:gray;
+    height:100%;
+    margin:0;
+}
+
+#screen10 header ul li:nth-child(1){
+    float:left;
+    width:20%;
+}
+#screen10 header ul li:nth-child(2){
+    float:left;
+    width:60%;
+}
+#screen10 header ul li:nth-child(3){
+    float:left;
+    width:20%;
+}
+
+
+#screen10 #backHome i {
+    padding: 15px 10px 15px 10px;
+}
+#screen10 #backHome i {
+    float: left;
+}
+
+#screen10 #add i {
+    padding: 15px 10px 15px 10px;
+}
+#screen10 #add i {
+    float:right;
+}
+
+
+#screen10 #topview{
+    height:40%;
+    min-height: 100px;
+    position: relative;
+}
+
+#screen10 #wrapper{
+    position: relative;
+    display:block;
+    height:15%;
+    font-size: 20px;
+    text-align: center;
+}
+
+#screen10 #wrapper input{
+    display:block;
+    font-size: 25px;
+    width:100%;
+    text-align: center;
+    margin:0;
+    padding:0;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+#screen10 #outerWrapper{
+    position: absolute;
+    top: 40%;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#screen10 #bottomview{
+    color:#d9d9d9;
+    height:40%;
+    background-color: black;
+    min-height: 100px;
+}
+
+#screen10 #goArrow{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#screen10 footer{
+    height:10%;
+}
+
+#screen10 footer ul{
+    padding:0;
+    height:100%;
+    width:100%;
+    margin:0;
+    min-height: 55px;
+}
+
+#screen10 footer li{
+    font-size: 10px;
+    width:20%;
+    height:100%;
+    float:left;
+    background-color: #a0a0a0;
+    position: relative;
+    padding-top:10px;
+}
+#screen10 footer li{
+    text-align: center;
+}
+
+#screen10 footer li:hover{
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+
+
+
 
 
 
