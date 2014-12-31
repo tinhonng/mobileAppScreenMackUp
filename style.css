@@ -1093,9 +1093,10 @@ header{
 /**/
 #screen10{
     height:100%;
+    font-weight: 200;
 }
 #screen10 header{
-    font-size: 15px;
+    font-size: 16px;
     height:10%;
     min-height: 50px;
     width:100%;
@@ -1104,7 +1105,6 @@ header{
 #screen10 header ul{
     padding:5px 10px 5px 10px;
     background-color: black;
-    color:gray;
     height:100%;
     margin:0;
 }
@@ -1112,14 +1112,18 @@ header{
 #screen10 header ul li:nth-child(1){
     float:left;
     width:20%;
+    color:grey;
 }
 #screen10 header ul li:nth-child(2){
     float:left;
     width:60%;
+    color: #e2e2e2;
 }
 #screen10 header ul li:nth-child(3){
     float:left;
     width:20%;
+    color:grey;
+    display:table;
 }
 
 
@@ -1135,12 +1139,15 @@ header{
 }
 #screen10 #add i {
     float:right;
+    display:table-cell;
+    vertical-align: middle;
 }
 
 
 #screen10 #topview{
+    background-color: #c6c6c6;
     height:40%;
-    min-height: 100px;
+    min-height: 40px;
     position: relative;
 }
 
@@ -1153,14 +1160,34 @@ header{
 }
 
 #screen10 #wrapper input{
+    background-color: #c6c6c6;
     display:block;
     font-size: 25px;
     width:100%;
     text-align: center;
     margin:0;
     padding:0;
-    border-top:2px solid black;
-    border-bottom:2px solid black;
+    color: #e2e2e2;
+    border-top:2px solid #b8b8b8;
+    border-bottom:2px solid #b8b8b8;
+    border-left: 0;
+    border-right: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #e2e2e2;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #e2e2e2;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #c5c5c5;
+}
+
+:-ms-input-placeholder {
+    color: #c5c5c5;
 }
 #screen10 #outerWrapper{
     position: absolute;
@@ -1172,10 +1199,11 @@ header{
 }
 
 #screen10 #bottomview{
-    color:#d9d9d9;
+    color: #c5c5c5;
     height:40%;
-    background-color: black;
-    min-height: 100px;
+    background-color: #f3f3f3;
+    min-height: 40px;
+    font-size:20px;
 }
 
 #screen10 #goArrow{
@@ -1186,6 +1214,7 @@ header{
 
 #screen10 footer{
     height:10%;
+    min-height: 60px;
 }
 
 #screen10 footer ul{
@@ -1193,24 +1222,61 @@ header{
     height:100%;
     width:100%;
     margin:0;
-    min-height: 55px;
 }
+
 
 #screen10 footer li{
     font-size: 10px;
     width:20%;
     height:100%;
     float:left;
-    background-color: #a0a0a0;
+    background-color: black;
     position: relative;
     padding-top:10px;
-}
-#screen10 footer li{
     text-align: center;
+    color: #a3a3a3;
+
 }
 
-#screen10 footer li:hover{
-    background-color: #d9d9d9;
+
+#screen10 footer li:nth-child(1){
+    border-bottom: 4px solid #3763e9;
+}
+#screen10 footer li:nth-child(2){
+    border-bottom: 4px solid #db8900;
+}
+#screen10 footer li:nth-child(3){
+    border-bottom: 4px solid #bf2b26;
+}
+#screen10 footer li:nth-child(4){
+    border-bottom: 4px solid #459634;
+}
+#screen10 footer li:nth-child(5){
+    border-bottom: 4px solid #e0cf00;
+}
+#screen10 footer li:nth-child(1):hover{
+    color: white;
+    background-color:  #3763e9;
+    cursor: pointer;
+}
+#screen10 footer li:nth-child(2):hover{
+    color: white;
+    background-color:  #db8900;
+    cursor: pointer;
+}
+#screen10 footer li:nth-child(3):hover{
+    color: white;
+    background-color:  #bf2b26;
+    cursor: pointer;
+}
+#screen10 footer li:nth-child(4):hover{
+    color: white;
+    background-color:  #459634;
+    cursor: pointer;
+}
+#screen10 footer li:nth-child(5):hover{
+    color: white;
+    background-color:  #e0cf00;
     cursor: pointer;
 }
 
