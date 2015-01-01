@@ -656,11 +656,12 @@ header{
 
 #screen6 header{
     position:relative;
+    color: #f4f4f4;
     width:100%;
     margin:0;
     height:10%;
     z-index: 1;
-    background-color: #f6f6f6;
+    background-color: #000f13;
 }
 
 #screen6 ul{
@@ -688,6 +689,7 @@ header{
     height:90%;
     max-width:100%;
     position: relative;
+    background-color: #f4f4f4;
 }
 
 #screen6 #companyNameList{
@@ -700,22 +702,26 @@ header{
     position: absolute;
     right:-250px;
     bottom:-250px;
+
 }
 
-#screen6 .circle{
-    border:100px solid white;
+#screen6 ul[class='circle']{
+    border:100px solid #f4f4f4;
     padding:0;
     list-style-type: none;
     position: relative;
     width:300px;
     height:300px;
     border-radius:50%;
-    background: -webkit-radial-gradient(white, white, #acacac); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(white, white, #acacac); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(white, white, #acacac); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(white, white, #acacac); /* Standard syntax */
+    background: -webkit-radial-gradient(white, white, #00c9f4); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(white, white, #00c9f4); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(white, white, #00c9f4); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(white, white, #00c9f4); /* Standard syntax */
     transform-origin: 50% 50%;
+    color: #00aed3;
 }
+
+
 
 #screen6 .circle:hover{
     cursor:pointer;
@@ -748,14 +754,16 @@ header{
 
 #screen7{
     height:100%;
+    background-color: #e0e0e0;
+    color: #595959;
 }
 #screen7 header{
     padding:0;
     margin:0;
     width:100%;
-    height: 40px;
+    height: 60px;
     position: relative;
-    font-size:80%;
+    font-size:16px;
 }
 
 #screen7 header > ul{
@@ -766,10 +774,12 @@ header{
 }
 
 #screen7 #saveOption{
-    top:30%;
+    top:15px;
     position: absolute;
     right:5%;
-    font-size: 80%;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
 }
 
 #screen7 #planAvailability {
@@ -780,7 +790,9 @@ header{
 
 #screen7 #time{
     height:45%;
-    color: #a3a3a3;
+    min-height: 300px;
+    color: #00728a;
+    font-size:20px;
 }
 
 #screen7 #time #outerCircle{
@@ -808,7 +820,6 @@ header{
     margin:auto;
     height:150px;
     width:150px;
-    background-color: white;
     border-radius: 50%;
     position: absolute;
     top:calc(125px - 75px);
@@ -816,43 +827,89 @@ header{
 }
 
 #screen7 #month{
+    color: #9e9622;
     height:45%;
+    font-size: 20px;
+}
+
+#day_of_week{
+    width:300px;
+    margin:auto;
+    height:45px;
 }
 
 #screen7 #day_of_week li{
-    width:30px;
+    width:40px;
     float:left;
 }
 
-#screen7 #date li{
-    width:30px;
-    float:left;
-    height:16px;
+#date{
+    width:300px;
+    margin:auto;
 }
+
+#screen7 #date li{
+    width:40px;
+    float:left;
+    height:45px;
+}
+
 #screen8{
     height:100%;
 }
 #screen8 header{
+    font-size: 16.5px;
     height:10%;
+    min-height: 68px;
     width:100%;
     margin:0;
 }
 #screen8 header ul{
-    background-color: black;
-    color:gray;
+    padding:5px 10px 5px 10px;
+    background-color: #000f13;
+    height:100%;
     margin:0;
 }
 
-#screen8 header ul li{
-    display:inline;
+#screen8 header ul li:nth-child(1){
+    float:left;
+    width:20%;
+    color:grey;
+}
+#screen8 header ul li:nth-child(2){
+    float:left;
+    height:100%;
+    width:60%;
+    color: #e2e2e2;
+    display: table;
+}
+#screen8 header ul li:nth-child(3){
+    float:left;
+    width:20%;
+    color:grey;
+    display:table;
 }
 
-#screen8 #backHome{
+#screen8 #titleText{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+#screen8 #backHome i {
+    padding: 15px 10px 15px 10px;
+}
+#screen8 #backHome i {
     float: left;
 }
 
-#screen8 #add{
-    float: right;
+#screen8 #add i {
+    padding: 15px 10px 15px 10px;
+}
+#screen8 #add i {
+    float:right;
+    display:table-cell;
+    vertical-align: middle;
 }
 
 #screen8 #topview{
@@ -881,7 +938,7 @@ header{
 }
 #screen8 #outerWrapper{
     position: absolute;
-    top: 45%;
+    top: 40%;
     height:100%;
     width:100%;
     margin:0;
@@ -890,7 +947,7 @@ header{
 
 #screen8 #bottomview{
     height:40%;
-    background-color: black;
+    background-color: #000f13;
     min-height: 100px;
 }
 
@@ -902,6 +959,11 @@ header{
 
 #screen8 footer{
     height:10%;
+    min-height:60px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
 }
 
 #screen8 footer ul{
@@ -909,50 +971,97 @@ header{
     height:100%;
     width:100%;
     margin:0;
-
 }
+
 
 #screen8 footer li{
     font-size: 10px;
     width:20%;
     height:100%;
     float:left;
-    background-color: #a0a0a0;
+    background-color: #000f13;
     position: relative;
     padding-top:10px;
-}
-#screen8 footer li{
     text-align: center;
+    color: #a3a3a3;
+
 }
 
-#screen8 footer li:hover{
-    background-color: #d9d9d9;
+
+#screen8 footer li:nth-child(1){
+    border-bottom: 4px solid #3763e9;
+}
+#screen8 footer li:nth-child(2){
+    border-bottom: 4px solid #db8900;
+}
+#screen8 footer li:nth-child(3){
+    border-bottom: 4px solid #bf2b26;
+}
+#screen8 footer li:nth-child(4){
+    border-bottom: 4px solid #459634;
+}
+#screen8 footer li:nth-child(5){
+    border-bottom: 4px solid #e0cf00;
+}
+#screen8 footer li:nth-child(1):hover{
+    color: white;
+    background-color:  #3763e9;
     cursor: pointer;
 }
-
+#screen8 footer li:nth-child(2):hover{
+    color: white;
+    background-color:  #db8900;
+    cursor: pointer;
+}
+#screen8 footer li:nth-child(3):hover{
+    color: white;
+    background-color:  #bf2b26;
+    cursor: pointer;
+}
+#screen8 footer li:nth-child(4):hover{
+    color: white;
+    background-color:  #459634;
+    cursor: pointer;
+}
+#screen8 footer li:nth-child(5):hover{
+    color: white;
+    background-color:  #e0cf00;
+    cursor: pointer;
+}
 
 /**/
 #screen9{
     height:100%;
 }
 #screen9 header{
-    font-size: 15px;
+    font-size: 16.5px;
     height:10%;
-    min-height: 50px;
+    min-height: 68px;
     width:100%;
     margin:0;
 }
 #screen9 header ul{
     padding:5px 10px 5px 10px;
-    background-color: black;
-    color:gray;
+    background-color: #000f13;
     height:100%;
     margin:0;
 }
 
-#screen9 header ul li{
+#screen9 header ul li:nth-child(1){
     float:left;
-    width:33.3%;
+    width:20%;
+    color:grey;
+}
+#screen9 header ul li:nth-child(2){
+    float:left;
+    width:60%;
+    color: #e2e2e2;
+}
+#screen9 header ul li:nth-child(3){
+    float:left;
+    width:20%;
+    color:grey;
+    display:table;
 }
 
 
@@ -968,7 +1077,10 @@ header{
 }
 #screen9 #add i {
     float:right;
+    display:table-cell;
+    vertical-align: middle;
 }
+
 
 
 #screen9 #topview{
@@ -1003,23 +1115,10 @@ header{
 
 #screen9 #bottomview{
     height:40%;
-    background-color: black;
+    font-size: 16px;
+    background-color: #000f13;
     min-height: 100px;
-}
-
-#screen9 #bottomview ul{
-    height:100%;
-    width:100%;
-    padding:0;
-    font-size: 20px;
-}
-
-#screen9 #bottomview ul li{
-    height:33.3%;
-    width:100%;
-    border-bottom: 1px solid white;
     text-align: center;
-    display:table;
 }
 
 #screen9 #bottomview ul li div{
@@ -1027,9 +1126,13 @@ header{
     vertical-align: middle;
 }
 
-
 #screen9 footer{
     height:10%;
+    min-height:60px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
 }
 
 #screen9 footer ul{
@@ -1037,24 +1140,61 @@ header{
     height:100%;
     width:100%;
     margin:0;
-
 }
+
 
 #screen9 footer li{
     font-size: 10px;
     width:20%;
     height:100%;
     float:left;
-    background-color: #a0a0a0;
+    background-color: #000f13;
     position: relative;
     padding-top:10px;
-}
-#screen9 footer li{
     text-align: center;
+    color: #a3a3a3;
+
 }
 
-#screen9 footer li:hover{
-    background-color: #d9d9d9;
+
+#screen9 footer li:nth-child(1){
+    border-bottom: 4px solid #3763e9;
+}
+#screen9 footer li:nth-child(2){
+    border-bottom: 4px solid #db8900;
+}
+#screen9 footer li:nth-child(3){
+    border-bottom: 4px solid #bf2b26;
+}
+#screen9 footer li:nth-child(4){
+    border-bottom: 4px solid #459634;
+}
+#screen9 footer li:nth-child(5){
+    border-bottom: 4px solid #e0cf00;
+}
+#screen9 footer li:nth-child(1):hover{
+    color: white;
+    background-color:  #3763e9;
+    cursor: pointer;
+}
+#screen9 footer li:nth-child(2):hover{
+    color: white;
+    background-color:  #db8900;
+    cursor: pointer;
+}
+#screen9 footer li:nth-child(3):hover{
+    color: white;
+    background-color:  #bf2b26;
+    cursor: pointer;
+}
+#screen9 footer li:nth-child(4):hover{
+    color: white;
+    background-color:  #459634;
+    cursor: pointer;
+}
+#screen9 footer li:nth-child(5):hover{
+    color: white;
+    background-color:  #e0cf00;
     cursor: pointer;
 }
 
@@ -1103,14 +1243,15 @@ header{
     position:relative;
 }
 #screen10 header{
-    font-size: 16px;
+    height:10%;
+    font-size: 16.5px;
     min-height: 55px;
     width:100%;
     margin:0;
 }
 #screen10 header ul{
     padding:5px 10px 5px 10px;
-    background-color: black;
+    background-color: #000f13;
     height:100%;
     margin:0;
 }
@@ -1219,7 +1360,8 @@ header{
 }
 
 #screen10 footer{
-    height:60px;
+    height:10%;
+    min-height:60px;
     position:absolute;
     bottom:0;
     left:0;
@@ -1239,7 +1381,7 @@ header{
     width:20%;
     height:100%;
     float:left;
-    background-color: black;
+    background-color: #000f13;
     position: relative;
     padding-top:10px;
     text-align: center;
