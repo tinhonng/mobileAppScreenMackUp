@@ -363,61 +363,71 @@ header{
 }
 
 #screen3 header{
-    height:10%;
+    height:60px;
     width:100%;
     margin:0;
-    padding:10% 0 0 0;
 }
 
 #screen3 #backHome{
     position: absolute;
-    left:5%;
-    top:3%;
+    left:40px;
+    top:10px;
 }
 
 #screen3 header > ul{
     margin:0;
     padding:0;
+    width:100%;
+    display: table;
+    height:100%;
+}
+#screen3 #title{
+    display:table-cell;
+    vertical-align: middle;
 }
 
 
 #profile{
-    height:60%;
+    height:350px;
     width:100%;
 }
 
 #availability{
     position:relative;
-    height:10%;
+    height:40px;
     width:100%;
-    border: 1px solid gray;
+    border:1px solid #b2b2b2;
+    border-bottom: none;
 }
 #availability .fa-calendar{
     top: calc(50% - 12px);
     position:absolute;
     left: 5%;
+    color: #db8900;
 }
 #availability h4{
     top: calc(50% - 6.5px);
-    left:15%;
+    left: calc(16px + 10%);
     padding:0;
     margin:0;
     position:absolute;
 }
 #availability .fa-chevron-right{
     top: calc(50% - 10px);
-    right:5%;
+    right:20px;
     position:absolute;
 }
 
-#notification{
+#screen3 #notification{
     position: relative;
-    height:10%;
+    height:40px;
     width:100%;
-    border:1px solid gray;
+    border:1px solid #b2b2b2;
+    font-size: 20px;
+
 }
 
-#notification p{
+#screen3 #notification p{
     position: absolute;
     padding:0;
     width:70%;
@@ -427,23 +437,25 @@ header{
     left: calc(16px + 10%);
 }
 
-#notification .fa-bell-o{
+#screen3 #notification .fa-bell-o{
     position: absolute;
     top: calc(50% - 12px);
     left: 5%;
+    color: #db8900;
 }
 
-#notification .fa-toggle-off{
+#screen3 #notification .fa-toggle-off{
     position: absolute;
     top: calc(50% - 12px);
-    right: 19px;
+    right: 20px;
 
 }
 
 #screen3 #photoArea{
     background-color: #c0c0c0;
-    width:90%;
-    height:50%;
+    color:white;
+    width:100%;
+    height:200px;
     margin:auto;
     position: relative;
 }
@@ -455,21 +467,32 @@ header{
 }
 
 #screen3 #name{
-    margin:8% 15% 8% 15%;
+    height:30px;
+    width:90%;
+    padding: 10px 5% 10px 5%;
+    color:#bf2b26;
 }
 
 
 #screen3 #email{
-    margin:8% 15% 8% 15%;
+    height:30px;
+    width:90%;
+    padding: 10px 5% 10px 5%;
+    color:#bf2b26;
+
 }
 
 
 #screen3 #phoneNum{
-    margin:8% 15% 8% 15%;
+    height:30px;
+    width:90%;
+    padding: 10px 5% 10px 5%;
+    color:#bf2b26;
 }
 
 #screen4{
     height:100%;
+    background-color: #efefef;
 }
 
 #screen4 #backHome{
@@ -480,48 +503,60 @@ header{
 
 
 #screen4 header{
-    height:10%;
+    height:40px;
     width:100%;
     margin:0;
-    padding:10% 0 0 0;
+    padding:20px 0 20px 0;
+    background-color: #000f13;
+    color: #a2a2a2;
+    font-size: 20px;
 }
 
 #screen4 header > ul{
+    display:table;
+    width:100%;
     margin:0;
     padding:0;
+    height:100%;
+}
+
+#title{
+    display:table-cell;
+    vertical-align: middle;
 }
 
 #options{
-    height:70%;
+    height:400px;
 }
 #screen4 #options ul{
-    padding:0;
+    padding:50px 0 0 0;
     margin:0;
     width:100%;
     height:100%;
+    color: #5d5d5d;
 }
 
 #screen4 #companies{
     position:relative;
-    border-bottom:1px solid black;
+    border-bottom:1px solid white;
     height:15%;
     background-color: #d0d0d0;
 }
 #screen4 #locations{
     position:relative;
-    border-bottom:1px solid black;
+    border-bottom:1px solid white;
     height:15%;
     background-color: #d0d0d0;
 }
 #screen4 #departments{
     position:relative;
-    border-bottom:1px solid black;
+    border-bottom:1px solid white;
     height:15%;
     background-color: #d0d0d0;
 }
 #screen4 #employees{
     position:relative;
-    border-bottom:1px solid black;
+    border-bottom:1px solid white;
     height:15%;
     background-color: #d0d0d0;
 }
@@ -535,6 +570,7 @@ header{
     position: absolute;
     left:3%;
     top:40%;
+    color: #db8900;
 }
 
 #screen4 .optionName{
@@ -550,15 +586,15 @@ header{
 #screen4 .arrow{
     position: absolute;
     right:3%;
-    top:40%;
+    top:45%;
 }
 #screen5{
     height: 100%;
 }
 #screen5 header{
     width:100%;
-    height:20%;
-    background-color: #ff9d9e;
+    height:130px;
+    background-color: #000f13;
     margin:0;
 }
 #screen5 header > ul{
@@ -568,14 +604,16 @@ header{
 
 #screen5 #backHome{
     position: absolute;
-    left:5%;
+    left:15px;
+    top:10px;
+    color: #a3a3a3;
 }
 
 #screen5 #searchArea{
     position: absolute;
-    top:10%;
+    top:55px;
     width: 100%;
-    height: 6%;
+    height: 40px;
 }
 
 #screen5 #searchArea > input{
@@ -587,7 +625,7 @@ header{
 }
 
 #screen5 #userListArea{
-    background-color: #e8e3da;
+    background-color: #f0f0f0;
     height: 80%;
 }
 
@@ -606,7 +644,8 @@ header{
     font-size:80%;
 }
 #screen5 #userListArea > ul > li:nth-child(even){
-    background-color: #c8c8c8;
+    color:white;
+    background-color: #a6a6a6;
 }
 
 #screen5 #userListArea > ul > li > ul > li:nth-child(1){
